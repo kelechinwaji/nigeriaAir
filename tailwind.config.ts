@@ -14,6 +14,13 @@ export default {
         red: {
           10: "#ED1D24",
         },
+        black: "#00000099",
+      },
+      maxWidth: {
+        mac: "1440px",
+      },
+      backgroundImage: {
+        layout_hero: "url('/heroBg.png')",
       },
     },
   },

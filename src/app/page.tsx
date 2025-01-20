@@ -1,5 +1,10 @@
+import Hero from "@/components/home/Hero";
 import Image from "next/image";
 
 export default function Home() {
-  return <main className="min-h-dvh">Home</main>;
+  return (
+    <div className="">
+      <Hero />
+    </div>
+  );
 }

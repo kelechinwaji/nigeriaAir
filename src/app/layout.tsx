@@ -22,10 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${interSans.variable} grid grid-rows-[max-content_auto] h-full`}
+        className={`${interSans.variable} grid grid-rows-[max-content_auto] h-full bg-layout_hero bg-no-repeat bg-cover`}
       >
         <Header />
-        {children}
+        <main className="max-w-mac w-full mx-auto min-h-dvh">{children}</main>
         <Footer />
       </body>
     </html>
