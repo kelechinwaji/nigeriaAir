@@ -21,6 +21,14 @@ export default {
       },
       backgroundImage: {
         layout_hero: "url('/heroBg.png')",
+        elevate_ops:
+          "linear-gradient(-30deg,  #737373, #EC1C24), url('/ba-offload.jpg')",
+      },
+      dropShadow: {
+        services: "0px 2.74px 6.5px 0px #00000040",
+      },
+      boxShadow: {
+        services: "0px 2.74px 6.5px 0px #00000040",
       },
     },
   },
