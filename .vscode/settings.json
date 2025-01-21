@@ -1,0 +1,11 @@
+{
+  "css.lint.unknownAtRules": "ignore",
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["classNames\\s*:\\s*{[^}]*}", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["classNames\\s*:\\s*['\"]([^'\"]*)['\"]", "['\"]([^'\"]*)['\"]"],
+    ["classNames\\s*=\\s*['\"]([^'\"]*)['\"]", "['\"]([^'\"]*)['\"]"],
+    ["classNames\\s*=\\s*`([^`]*)`", "`([^`]*)`"]
+  ],
+  "tailwindCSS.classAttributes": ["class", "className", "ngClass", "classNames"]
+}

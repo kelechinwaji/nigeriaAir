@@ -29,6 +29,7 @@ export default {
       },
       boxShadow: {
         services: "0px 2.74px 6.5px 0px #00000040",
+        servicesList: "0px 2.36px 2.36px 0px #00000040",
       },
     },
   },

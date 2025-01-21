@@ -1,3 +1,4 @@
+import { mergeClassName } from "@/utils";
 import Image from "next/image";
 import React from "react";
 
@@ -12,10 +13,21 @@ const content = [
   },
 ];
 
-function WhoAreWe() {
+type Props = {
+  classNames?: Partial<Record<"container", string>>;
+};
+
+function WhoAreWe({ classNames }: Props) {
   return (
-    <section className="text-black flex flex-col gap-y-10 py-5 px-5 bg-white lg:flex-row-reverse lg:items-center lg:px-24 lg:py-32 xl:gap-x-28 lg:gap-x-10 lg:justify-between ">
-      <div className="flex flex-col gap-y-14 lg:max-w-[38.25rem]">
+    <section
+      className={mergeClassName(
+        "text-black flex flex-col gap-y-10 py-5 px-5 bg-white lg:flex-row-reverse lg:items-center lg:px-24 lg:py-32 xl:gap-x-28 lg:gap-x-10 lg:justify-between",
+        classNames?.container
+      )}
+    >
+      <div
+        className={mergeClassName("flex flex-col gap-y-14 lg:max-w-[38.25rem]")}
+      >
         {content.map((item) => (
           <div key={item.title} className="flex flex-col gap-y-3.5">
             <h3 className="text-5xl">{item.title}</h3>
@@ -23,7 +35,11 @@ function WhoAreWe() {
           </div>
         ))}
       </div>
-      <div className="relative w-[22.625rem] h-[30rem] rounded-3xl overflow-hidden self-center lg:w-[26.1875rem] lg:h-[34.875rem]  ">
+      <div
+        className={mergeClassName(
+          "relative w-[22.625rem] h-[30rem] rounded-3xl overflow-hidden self-center lg:w-[26.1875rem] lg:h-[34.875rem]"
+        )}
+      >
         <Image src={"/dream-liner.jpg"} alt="hand held plane" fill />
       </div>
     </section>
