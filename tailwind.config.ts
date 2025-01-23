@@ -21,8 +21,8 @@ export default {
       },
       backgroundImage: {
         layout_hero: "url('/heroBg.png')",
-        elevate_ops:
-          "linear-gradient(-30deg,  #737373, #EC1C24), url('/ba-offload.jpg')",
+        elevate_ops: "url('/ba-offload.jpg')",
+        elevate_gradient: "linear-gradient(-30deg,  #737373, #EC1C24), ",
         logo: "url('/inter-air-logo.svg'), url('/white.png')",
       },
       backgroundPosition: {
