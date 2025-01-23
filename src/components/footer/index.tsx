@@ -6,7 +6,7 @@ import React from "react";
 function Footer() {
   return (
     <footer className="mx-auto max-w-mac w-full">
-      <div className="text-white bg-black [&_a]:block [&_a]:text-base [&_a]:leading-7 py-9 px-4 flex flex-col gap-y-7 lg:gap-y-20 lg:px-24 lg:pt-24 lg:pb-36">
+      <div className="text-white bg-[#000000] [&_a]:block [&_a]:text-base [&_a]:leading-7 py-9 px-4 flex flex-col gap-y-7 lg:gap-y-20 lg:px-24 lg:pt-24 lg:pb-36">
         <header className="flex items-center justify-between pb-7 lg:pb-10 border-b border-white">
           <h3 className="text-[2rem] leading-10 font-bold">Let’s Connect</h3>
           <Link
