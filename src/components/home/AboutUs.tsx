@@ -28,6 +28,7 @@ function AboutUs() {
           src={"/aircraft-airplane-aviation-transportation-travel-trip.png"}
           alt="aircraft-airplane-aviation-transportation-travel-trip"
           fill
+          className="object-cover"
         />
       </div>
     </div>

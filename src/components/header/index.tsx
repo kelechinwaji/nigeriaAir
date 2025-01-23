@@ -45,7 +45,7 @@ function Header() {
   };
 
   return (
-    <header className="mx-auto max-w-mac w-full">
+    <header className="mx-auto max-w-mac w-full bg-layout_hero bg-no-repeat bg-cover">
       <div className="flex items-center justify-between py-2.5 px-5 relative lg:px-24 lg:py-4">
         <Link href={"/"} className="w-12 h-8 lg:w-28 lg:h-20 relative block">
           <Image

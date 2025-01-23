@@ -36,7 +36,7 @@ function ContactInfo() {
         <div key={index} className="flex flex-col gap-y-2 items-center lg:gap-y-3.5">
           <div className="flex flex-col gap-y-1 lg:gap-y-3.5">
             <div className="relative size-8 mx-auto lg:size-16">
-              <Image src={item.icon} alt={item.title} fill />
+              <Image src={item.icon} alt={item.title} fill className="object-cover" />
             </div>
             <h4 className="text-[2rem] leading-10 text-black lg:text-5xl">
               {item.title}

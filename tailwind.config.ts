@@ -23,6 +23,11 @@ export default {
         layout_hero: "url('/heroBg.png')",
         elevate_ops:
           "linear-gradient(-30deg,  #737373, #EC1C24), url('/ba-offload.jpg')",
+        logo: "url('/inter-air-logo.svg'), url('/white.png')",
+      },
+      backgroundPosition: {
+        logo_position: "10px 50px, 40px 50px",
+        // logo_position: "right center, left center",
       },
       dropShadow: {
         services: "0px 2.74px 6.5px 0px #00000040",

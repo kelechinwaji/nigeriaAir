@@ -24,6 +24,10 @@ function Hero() {
         image: "bg-[#D9D9D9]",
         subtext: "lg:max-w-max",
       }}
+      animation={{
+        image: "-100%",
+        text: "100%",
+      }}
     />
   );
 }

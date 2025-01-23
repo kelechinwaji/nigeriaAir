@@ -57,7 +57,12 @@ function ServicesList() {
           <li key={idx} className="h-full self-stretch">
             <div className="rounded-t-3xl pb-12 overflow-hidden shadow-servicesList h-full">
               <div className="h-52 w-full lg:h-[22.5rem] relative">
-                <Image src={item.img} alt={item.title} fill objectFit="cover" />
+                <Image
+                  src={item.img}
+                  alt={item.title}
+                  fill
+                  /* objectFit="cover" */ className="object-cover"
+                />
               </div>
               <div className="flex flex-col gap-y-2 p-3 lg:px-6 lg:gap-y-3">
                 <p className="text-[2rem] leading-10 text-black lg:text-xl lg:leading-10">

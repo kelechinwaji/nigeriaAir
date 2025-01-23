@@ -24,7 +24,7 @@ function VisionMission() {
         ))}
       </div>
       <div className="relative w-[22.625rem] h-[30rem] rounded-3xl overflow-hidden self-center lg:w-[26.1875rem] lg:h-[34.875rem]  ">
-        <Image src={"/handHeldPlane.jpg"} alt="hand held plane" fill />
+        <Image src={"/handHeldPlane.jpg"} alt="hand held plane" fill className="object-cover" />
       </div>
     </section>
   );

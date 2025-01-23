@@ -1,3 +1,6 @@
+"use client";
+import { mergeClassName } from "@/utils";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const services = [
@@ -34,6 +37,10 @@ const services = [
 ];
 
 function WhatWeOffer() {
+  const router = useRouter();
+  const seeMoreHandler = () => {
+    router.push("/services");
+  };
   return (
     <section className="px-5 flex flex-col gap-y-10 [&>*]:text-black lg:px-24 bg-white py-10">
       <h2 className="text-[2rem] leading-10 lg:self-center lg:text-5xl">
@@ -46,7 +53,10 @@ function WhatWeOffer() {
             className="pt-12 pb-[7.75rem] px-3.5 flex flex-col gap-y-1 rounded-2xl shadow-services items-center lg:items-start lg:pt-11 lg:pb-20 lg:px-6 lg:rounded-3xl"
           >
             <div
-              className={`w-11 h-9 rounded text-white bg-black flex items-center justify-center ${item.theme}`}
+              className={mergeClassName(
+                "w-11 h-9 rounded text-white bg-black flex items-center justify-center",
+                item?.theme
+              )}
             >
               0{index + 1}
             </div>
@@ -56,6 +66,12 @@ function WhatWeOffer() {
             </p>
           </div>
         ))}
+        <button
+          className="py-2 px-7 rounded-3xl text-red-10 border border-red-10 font-semibold leading-7 col-span-full justify-self-end"
+          onClick={seeMoreHandler}
+        >
+          See all
+        </button>
       </div>
     </section>
   );
