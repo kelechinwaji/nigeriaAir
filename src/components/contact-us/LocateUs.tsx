@@ -14,7 +14,7 @@ function LocateUs() {
     id: "google-map-script",
     googleMapsApiKey: process.env.NEXT_PUBLIC_MAPS_API_KEY || "",
   });
-  const [_, setMap] = React.useState(null);
+  const [_, setMap] = React.useState(null); //eslint-disable-line
 
   // const onLoad = React.useCallback(function callback(map: any) {
   //   // This is just an example of getting and using the map instance!!! don't just blindly copy!
