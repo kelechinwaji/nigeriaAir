@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-function ContactUsEmailTemplate({}: Props) {
+function ContactUsEmailTemplate() {
   return <div>ContactUsEmailTemplate</div>;
 }
 

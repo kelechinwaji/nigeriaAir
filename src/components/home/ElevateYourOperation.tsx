@@ -14,7 +14,7 @@ function ElevateYourOperation() {
       </h2>
       <div className="flex flex-col gap-y-1 lg:items-center lg:gap-y-7">
         <p className="leading-7 lg:text-center">
-          "Join the airlines, cargo operators, and private aviation leaders who
+          Join the airlines, cargo operators, and private aviation leaders who
           trust InterAir to deliver seamless, efficient, and reliable flight
           support services. From ground handling to fueling, we ensure your
           operations run smoothly, 24/7, across the globe.

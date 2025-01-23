@@ -1,7 +1,5 @@
 import React from "react";
 
-type Props = {};
-
 const services = [
   {
     title: "Overflight & Landing Permit",
@@ -35,7 +33,7 @@ const services = [
   },
 ];
 
-function WhatWeOffer({}: Props) {
+function WhatWeOffer() {
   return (
     <section className="px-5 flex flex-col gap-y-10 [&>*]:text-black lg:px-24 bg-white py-10">
       <h2 className="text-[2rem] leading-10 lg:self-center lg:text-5xl">
