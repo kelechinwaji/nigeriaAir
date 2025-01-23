@@ -23,12 +23,12 @@ type Props = {
 function WhoAreWe({ classNames }: Props) {
   const { containerRef, controls } = useAnimationObserver({
     animationDefinition: { opacity: 1, x: 0, y: 0 },
-    threshold: 0.8,
+    threshold: 0.1,
   });
   return (
     <section
       className={mergeClassName(
-        "text-black flex flex-col gap-y-10 py-5 px-5 bg-white lg:flex-row-reverse lg:items-center lg:px-24 lg:py-32 xl:gap-x-28 lg:gap-x-10 lg:justify-between",
+        "text-black flex flex-col gap-y-10 py-5 px-5 bg-white lg:flex-row-reverse lg:items-center lg:px-24 lg:py-32 xl:gap-x-28 lg:gap-x-10 lg:justify-between overflow-hidden",
         classNames?.container
       )}
       ref={containerRef}

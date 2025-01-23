@@ -27,6 +27,7 @@ type Props = {
   classNames?: Partial<Record<ClassNames, string>>;
   children?: ReactNode;
   animation?: Partial<Record<AnimationPostionX, string>>;
+  imageInfo?: ReactNode;
 };
 
 function HeroTemplate({
@@ -34,6 +35,7 @@ function HeroTemplate({
   headline,
   subtext,
   classNames,
+  imageInfo,
   children,
   animation = { image: "100%", text: "-100%" },
 }: Props) {
@@ -52,19 +54,22 @@ function HeroTemplate({
     >
       <motion.div
         className={mergeClassName(
-          "relative w-72 h-96 rounded-3xl overflow-hidden md:ml-28 sm:mr-10 lg:w-96 lg:h-[33rem]",
+          "relative w-72 h-96  md:ml-28 sm:mr-10 lg:w-96 lg:h-[33rem]",
           classNames?.imageContainer
         )}
         initial={{ x: animation?.image, opacity: 0 }}
         animate={controls}
         transition={{ duration: 0.8 }}
       >
-        <Image
-          src={img.src}
-          alt={img.alt}
-          fill
-          className={mergeClassName("object-cover", classNames?.image)}
-        />
+        {imageInfo}
+        <div className="w-full h-full relative overflow-hidden rounded-3xl">
+          <Image
+            src={img.src}
+            alt={img.alt}
+            fill
+            className={mergeClassName("object-cover", classNames?.image)}
+          />
+        </div>
       </motion.div>
       <section
         className={mergeClassName(

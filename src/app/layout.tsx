@@ -22,10 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        style={{
-          backgroundRepeat: "right center, left center",
-        }}
-        className={`${interSans.variable} grid grid-rows-[max-content_auto] h-full bg-layout_hero bg-no-repeat bg-cover`}
+        className={`${interSans.variable} grid grid-rows-[max-content_auto] h-full bg-layout_hero bg-no-repeat bg-cover w-full mx-auto`}
       >
         <Header />
         <main className="max-w-mac w-full mx-auto min-h-dvh">{children}</main>

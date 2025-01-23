@@ -18,12 +18,12 @@ const content = [
 function VisionMission() {
   const { containerRef, controls } = useAnimationObserver({
     animationDefinition: { opacity: 1, x: 0, y: 0 },
-    threshold: 0.8,
+    threshold: 0.2,
   });
 
   return (
     <section
-      className="text-black flex flex-col gap-y-10 py-5 px-5 bg-white lg:flex-row-reverse lg:items-center lg:px-24 lg:py-32 xl:gap-x-28 lg:gap-x-10 lg:justify-between"
+      className="text-black flex flex-col gap-y-10 py-5 px-5 bg-white lg:flex-row-reverse lg:items-center lg:px-24 lg:py-32 xl:gap-x-28 lg:gap-x-10 lg:justify-between overflow-hidden"
       ref={containerRef}
     >
       <div className="flex flex-col gap-y-14 lg:max-w-[38.25rem]">
@@ -56,6 +56,8 @@ function VisionMission() {
         initial={{ x: "-100%", opacity: 0 }}
         animate={controls}
         transition={{ duration: 0.8 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true, amount: 0.1 }}
       >
         <Image
           src={"/handHeldPlane.jpg"}

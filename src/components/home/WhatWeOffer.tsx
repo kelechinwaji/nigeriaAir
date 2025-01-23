@@ -43,6 +43,7 @@ function WhatWeOffer() {
 
   const { containerRef, controls } = useAnimationObserver({
     animationDefinition: { opacity: 1, y: 0 },
+    threshold: 0.2,
   });
 
   const seeMoreHandler = () => {
@@ -51,7 +52,7 @@ function WhatWeOffer() {
 
   return (
     <section
-      className="px-5 flex flex-col gap-y-10 [&>*]:text-black lg:px-24 bg-white py-10"
+      className="px-5 flex flex-col gap-y-10 [&>*]:text-black lg:px-24 bg-white py-10 overflow-hidden"
       ref={containerRef}
     >
       <motion.h2

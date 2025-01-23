@@ -23,20 +23,20 @@ function ElevateYourOperation() {
 
   return (
     <section
-      className="pt-10 pb-20 px-6 flex flex-col gap-y-2 [&>*]:text-white relative  lg:pt-[4.3125rem] lg:pb-[6.625rem] lg:px-24 lg:items-center lg:gap-y-8 bg-elevate_ops bg-no-repeat bg-center bg-cover"
+      className="pt-10 pb-20 px-6 flex flex-col gap-y-2 [&>*]:text-white relative  lg:pt-[4.3125rem] lg:pb-[6.625rem] lg:px-24 lg:items-center lg:gap-y-8 bg-elevate_ops bg-no-repeat bg-center bg-cover overflow-hidden"
       ref={containerRef}
     >
       <motion.div
         className="absolute inset-0 bg-gradient-to-br opacity-50 from-red-10 to-white"
         initial={{ x: "-100%", opacity: 0, y: 0 }}
-        animate={gradientAnimation}
-        transition={{ duration: 0.5 }}
+        animate={isInView ? gradientAnimation : undefined}
+        transition={{ duration: 0.4 }}
       />
       <motion.h2
         className="text-xl leading-10 lg:text-5xl font-bold z-[1]"
         initial={{ y: "-100%", opacity: 0 }}
         animate={controls}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.8 }}
       >
         Ready To Elevate Your Flight Operation
       </motion.h2>
@@ -44,7 +44,7 @@ function ElevateYourOperation() {
         className="flex flex-col gap-y-1 lg:items-center lg:gap-y-7 z-[1] lg:max-w-[56rem] lg:mx-auto"
         initial={{ y: "100%", opacity: 0 }}
         animate={controls}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.8 }}
       >
         <p className="leading-7 lg:text-center">
           Join the airlines, cargo operators, and private aviation leaders who
