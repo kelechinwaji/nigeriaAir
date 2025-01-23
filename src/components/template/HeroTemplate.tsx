@@ -43,7 +43,7 @@ function HeroTemplate({
 
   useEffect(() => {
     controls.start({ x: 0, opacity: 1 });
-  }, []);
+  }, []); //eslint-disable-line
 
   return (
     <section

@@ -37,7 +37,7 @@ function useAnimationObserver({ animationDefinition, threshold = 0.5 }: Props) {
         setIsInView(false);
       }
     };
-  }, [controls]);
+  }, [controls]); //eslint-disable-line
 
   return { controls, containerRef, isInView };
 }

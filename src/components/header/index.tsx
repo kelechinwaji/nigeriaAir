@@ -38,7 +38,7 @@ function Header() {
       return;
     }
     setIsOpen(false);
-  }, [pathname, isMobile]);
+  }, [pathname, isMobile]); //eslint-disable-line
 
   const openMenuHandler = () => {
     setIsOpen((prev) => !prev);
