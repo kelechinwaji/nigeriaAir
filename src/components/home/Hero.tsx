@@ -70,8 +70,8 @@ function Hero() {
             }}
           />
           <More
-            title="Customer-Centric Excellence"
-            text="Prioritizing the needs, comfort, and satisfaction of passengers at every touchpoint."
+            title="Sustainable Progress"
+            text="Advancing eco-friendly innovations to enhance efficiency and reduce environmental impact."
             classNames={{
               container: "bottom-7 -left-10 lg:-bottom-9 lg:-left-24",
             }}

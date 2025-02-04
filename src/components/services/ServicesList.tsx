@@ -14,7 +14,7 @@ const content = [
   },
   {
     title: "FBO & Ground Handling",
-    sub: "At InterAir, we leverage our strong partnerships with Civil Aviation Authorities, Authorized Agencies, and offices worldwide to secure the most efficient overflight and landing permits. Our dedicated operations team processes requests in minutes, ensuring that clients can take to the skies with minimal notice. Whether you're planning a spontaneous flight or need expedited approval, our network and expertise guarantee a seamless, timely experience for every journey.",
+    sub: "At InterAir, we provide top-tier Fixed Base Operator (FBO) and ground handling services to ensure smooth operations for every flight. Our experienced ground teams work around the clock to deliver premium support, including aircraft fueling, passenger and crew assistance, baggage handling, customs coordination, and VIP services. Whether it's a private jet or a commercial aircraft, we ensure quick turnarounds and seamless transitions between air and ground. With our global network and commitment to excellence, you can rely on InterAir for efficiency, comfort, and convenience at every destination.",
     img: "/services/ground-handling.png",
   },
   {
@@ -33,8 +33,8 @@ const content = [
     img: "/services/couch.jpg",
   },
   {
-    title: "cargo Airline",
-    sub: "At InterAir, we leverage our strong partnerships with Civil Aviation Authorities, Authorized Agencies, and offices worldwide to secure the most efficient overflight and landing permits. Our dedicated operations team processes requests in minutes, ensuring that clients can take to the skies with minimal notice. Whether you're planning a spontaneous flight or need expedited approval, our network and expertise guarantee a seamless, timely experience for every journey.",
+    title: "Cargo Airline Services",
+    sub: "InterAir offers comprehensive cargo airline solutions designed to meet the highest standards of efficiency and security. We specialize in handling time-sensitive, high-value, and oversized shipments with precision and care. Our team ensures smooth coordination of cargo loading, customs clearance, and air logistics, optimizing routes to minimize delays and costs. Whether you need express shipping, perishable goods transport, or specialized cargo handling, we provide tailored solutions that guarantee safe and timely delivery across the globe.",
     img: "/services/couch.jpg",
   },
   {

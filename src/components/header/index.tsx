@@ -46,8 +46,12 @@ function Header() {
 
   return (
     <header className="mx-auto max-w-mac w-full bg-layout_hero bg-no-repeat bg-cover">
-      <div className="flex items-center justify-between py-2.5 px-5 relative lg:px-24 lg:py-4">
-        <Link href={"/"} className="w-12 h-8 lg:w-28 lg:h-20 relative block">
+      <div className="flex items-center justify-between py-2 px-5 relative lg:px-24 lg:py-4">
+        <Link
+          href={"/"}
+          className="w-[3.75rem] h-10 lg:w-[9.625rem] lg:h-[6.5rem] relative block"
+        >
+          {/* w-12 h-8 lg:w-28 lg:h-20 */}
           <Image
             alt="inter air"
             src={"/inter-air-logo.svg"}
